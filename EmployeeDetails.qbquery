@@ -1,0 +1,26 @@
+﻿use batch50;
+
+create table employeedetails(id int , salary decimal(8,3),mobileno long , aadharno bigint);
+
+desc employeedetails;
+
+insert into employeedetails values(101,25365.123,7896541230,451236521478);
+
+select * from employeedetails;
+
+insert into employeedetails values(102,45698.123,6589741230,968532147852);
+
+create table datedemo(id int , dob date , time1 time , year1 year , date1 datetime);
+
+desc datedemo;
+
+select * from datedemo;
+
+insert into datedemo values(11 , curdate() , '12:05:45' , '2024' , now());
+
+create table testfile(id int , file1 blob , flag boolean);
+
+desc testfile;
+
+insert into testfile values(201 , load_file('C:\Users\Sakshi Bhaleghare\OneDrive\Documents'
+
